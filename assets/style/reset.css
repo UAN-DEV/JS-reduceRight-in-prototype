@@ -1,0 +1,35 @@
+/* 1. Включаем правильную border-box модель для всех элементов */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Убираем внешние отступы у тегов, которые имеют их по умолчанию */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Делаем списки чистыми (убираем маркеры и отступы) */
+ul[class], ol[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 4. Настраиваем базовое поведение body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 5. Упрощаем работу с изображениями */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 6. Наследуем шрифты для полей ввода и кнопок */
+input, button, textarea, select {
+  font: inherit;
+}
